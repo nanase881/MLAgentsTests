@@ -176,7 +176,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 1000
   Target: {fileID: 1846407044}
   forceMultiplier: 10
 --- !u!54 &154725257
@@ -280,10 +280,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 6b79bee2ce284b041a30eee199b2b2e6, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: RoolerBall
+  m_BehaviorName: RollerBall
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
