@@ -2,58 +2,22 @@
     "Sphere": {
         "checkpoints": [
             {
-                "steps": 4468,
-                "file_path": "results\\Sphere\\Sphere\\Sphere-4468.onnx",
-                "reward": 0.0,
-                "creation_time": 1690691097.2038977,
-                "auxillary_file_paths": [
-                    "results\\Sphere\\Sphere\\Sphere-4468.pt"
-                ]
-            },
-            {
-                "steps": 5949,
-                "file_path": "results\\Sphere\\Sphere\\Sphere-5949.onnx",
-                "reward": null,
-                "creation_time": 1690691543.7803626,
-                "auxillary_file_paths": [
-                    "results\\Sphere\\Sphere\\Sphere-5949.pt"
-                ]
-            },
-            {
-                "steps": 6077,
-                "file_path": "results\\Sphere\\Sphere\\Sphere-6077.onnx",
-                "reward": null,
-                "creation_time": 1690692973.9439762,
-                "auxillary_file_paths": [
-                    "results\\Sphere\\Sphere\\Sphere-6077.pt"
-                ]
-            },
-            {
-                "steps": 8056,
-                "file_path": "results\\Sphere\\Sphere\\Sphere-8056.onnx",
-                "reward": null,
-                "creation_time": 1690693060.6449404,
-                "auxillary_file_paths": [
-                    "results\\Sphere\\Sphere\\Sphere-8056.pt"
-                ]
-            },
-            {
-                "steps": 11157,
-                "file_path": "results\\Sphere\\Sphere\\Sphere-11157.onnx",
+                "steps": 20684,
+                "file_path": "results\\Sphere\\Sphere\\Sphere-20684.onnx",
                 "reward": 1.0,
-                "creation_time": 1690693272.617316,
+                "creation_time": 1690707779.773939,
                 "auxillary_file_paths": [
-                    "results\\Sphere\\Sphere\\Sphere-11157.pt"
+                    "results\\Sphere\\Sphere\\Sphere-20684.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 11157,
+            "steps": 20684,
             "file_path": "results\\Sphere\\Sphere.onnx",
             "reward": 1.0,
-            "creation_time": 1690693272.617316,
+            "creation_time": 1690707779.773939,
             "auxillary_file_paths": [
-                "results\\Sphere\\Sphere\\Sphere-11157.pt"
+                "results\\Sphere\\Sphere\\Sphere-20684.pt"
             ]
         }
     },

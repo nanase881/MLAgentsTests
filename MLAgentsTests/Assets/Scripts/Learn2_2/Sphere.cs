@@ -19,14 +19,11 @@ public class Sphere : Agent
 
     public override void OnEpisodeBegin()
     {
-        if (this.transform.localPosition.y < 0)
-        {
-            this.rb.angularVelocity = Vector3.zero;
-            this.rb.velocity = Vector3.zero;
-            this.transform.localPosition = new Vector3(0, 0.5f, 0);
-        }
+        this.rb.angularVelocity = Vector3.zero;
+        this.rb.velocity = Vector3.zero;
+        this.transform.localPosition = new Vector3(0, 0.5f, 0);
 
-        
+
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -36,6 +33,8 @@ public class Sphere : Agent
 
         sensor.AddObservation(rb.velocity.x);
         sensor.AddObservation(rb.velocity.y);
+        //sensor.AddObservation() 
+        //I want to add sensors for ray 
     }
 
     public float forceMultiplier = 10;
@@ -44,28 +43,40 @@ public class Sphere : Agent
         Vector3 controlSignal = Vector3.zero;
         controlSignal.x = actions.ContinuousActions[0];
         controlSignal.y = actions.ContinuousActions[1];
-        rb.AddForce(controlSignal * forceMultiplier);
+        //rb.AddForce(controlSignal * forceMultiplier);
+        rb.velocity = new Vector3(controlSignal.x * forceMultiplier, controlSignal.y * forceMultiplier, rb.velocity.z);
 
-        float distanceToTarget = Vector3.Distance(this.transform.localPosition, Cube.localPosition);
+        float distanceToCube = Vector3.Distance(this.transform.localPosition, Cube.localPosition);
 
-        if (distanceToTarget < 1.42f)
+        if (distanceToCube < 1.42f)
         {
             SetReward(1.0f);
             EndEpisode();
         }
-        else if (this.transform.localPosition.y < 0)
+        else if (this.transform.localPosition.y < 0 || this.transform.localPosition.y > 6 || this.transform.localPosition.x < -3)
         {
+            SetReward(-0.3f);
             EndEpisode();
         }
 
+        //if(distanceToCube < 13f)
+        //{
+        //    SetReward(0.5f);
+        //}
+
+        //if(distanceToCube < 20f)
+        //{
+        //    SetReward(0.2f);
+        //}
     }
 
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Enemy"))
         {
             Debug.Log("enemy");
-            SetReward(-1.0f);
+            //SetReward(-0.2f);
             EndEpisode();
         }
     }
