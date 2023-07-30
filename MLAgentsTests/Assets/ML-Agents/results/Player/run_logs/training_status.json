@@ -2,24 +2,6 @@
     "Player": {
         "checkpoints": [
             {
-                "steps": 9772,
-                "file_path": "results\\Player\\Player\\Player-9772.onnx",
-                "reward": null,
-                "creation_time": 1690633851.918481,
-                "auxillary_file_paths": [
-                    "results\\Player\\Player\\Player-9772.pt"
-                ]
-            },
-            {
-                "steps": 11500,
-                "file_path": "results\\Player\\Player\\Player-11500.onnx",
-                "reward": null,
-                "creation_time": 1690634520.0785143,
-                "auxillary_file_paths": [
-                    "results\\Player\\Player\\Player-11500.pt"
-                ]
-            },
-            {
                 "steps": 11628,
                 "file_path": "results\\Player\\Player\\Player-11628.onnx",
                 "reward": null,
@@ -27,15 +9,51 @@
                 "auxillary_file_paths": [
                     "results\\Player\\Player\\Player-11628.pt"
                 ]
+            },
+            {
+                "steps": 11769,
+                "file_path": "results\\Player\\Player\\Player-11769.onnx",
+                "reward": null,
+                "creation_time": 1690682024.8080804,
+                "auxillary_file_paths": [
+                    "results\\Player\\Player\\Player-11769.pt"
+                ]
+            },
+            {
+                "steps": 11894,
+                "file_path": "results\\Player\\Player\\Player-11894.onnx",
+                "reward": null,
+                "creation_time": 1690682340.9759107,
+                "auxillary_file_paths": [
+                    "results\\Player\\Player\\Player-11894.pt"
+                ]
+            },
+            {
+                "steps": 11996,
+                "file_path": "results\\Player\\Player\\Player-11996.onnx",
+                "reward": null,
+                "creation_time": 1690683035.6993382,
+                "auxillary_file_paths": [
+                    "results\\Player\\Player\\Player-11996.pt"
+                ]
+            },
+            {
+                "steps": 12104,
+                "file_path": "results\\Player\\Player\\Player-12104.onnx",
+                "reward": null,
+                "creation_time": 1690685348.827892,
+                "auxillary_file_paths": [
+                    "results\\Player\\Player\\Player-12104.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 11628,
+            "steps": 12104,
             "file_path": "results\\Player\\Player.onnx",
             "reward": null,
-            "creation_time": 1690634802.9264376,
+            "creation_time": 1690685348.827892,
             "auxillary_file_paths": [
-                "results\\Player\\Player\\Player-11628.pt"
+                "results\\Player\\Player\\Player-12104.pt"
             ]
         }
     },

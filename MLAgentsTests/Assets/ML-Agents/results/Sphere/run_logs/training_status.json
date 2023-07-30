@@ -1,0 +1,65 @@
+{
+    "Sphere": {
+        "checkpoints": [
+            {
+                "steps": 4468,
+                "file_path": "results\\Sphere\\Sphere\\Sphere-4468.onnx",
+                "reward": 0.0,
+                "creation_time": 1690691097.2038977,
+                "auxillary_file_paths": [
+                    "results\\Sphere\\Sphere\\Sphere-4468.pt"
+                ]
+            },
+            {
+                "steps": 5949,
+                "file_path": "results\\Sphere\\Sphere\\Sphere-5949.onnx",
+                "reward": null,
+                "creation_time": 1690691543.7803626,
+                "auxillary_file_paths": [
+                    "results\\Sphere\\Sphere\\Sphere-5949.pt"
+                ]
+            },
+            {
+                "steps": 6077,
+                "file_path": "results\\Sphere\\Sphere\\Sphere-6077.onnx",
+                "reward": null,
+                "creation_time": 1690692973.9439762,
+                "auxillary_file_paths": [
+                    "results\\Sphere\\Sphere\\Sphere-6077.pt"
+                ]
+            },
+            {
+                "steps": 8056,
+                "file_path": "results\\Sphere\\Sphere\\Sphere-8056.onnx",
+                "reward": null,
+                "creation_time": 1690693060.6449404,
+                "auxillary_file_paths": [
+                    "results\\Sphere\\Sphere\\Sphere-8056.pt"
+                ]
+            },
+            {
+                "steps": 11157,
+                "file_path": "results\\Sphere\\Sphere\\Sphere-11157.onnx",
+                "reward": 1.0,
+                "creation_time": 1690693272.617316,
+                "auxillary_file_paths": [
+                    "results\\Sphere\\Sphere\\Sphere-11157.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 11157,
+            "file_path": "results\\Sphere\\Sphere.onnx",
+            "reward": 1.0,
+            "creation_time": 1690693272.617316,
+            "auxillary_file_paths": [
+                "results\\Sphere\\Sphere\\Sphere-11157.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu117"
+    }
+}

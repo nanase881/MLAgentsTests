@@ -9,6 +9,7 @@ public class PlayerMove : Agent
 {
     Rigidbody rb;
     public Transform ClearSpace;
+    //public Transform Obstacle;
     public int moveSpeed = 5;
     //public int jumpForce = 6;
     //public bool isJumping = false;
@@ -32,6 +33,7 @@ public class PlayerMove : Agent
     {
         sensor.AddObservation(this.transform.position);
         sensor.AddObservation(ClearSpace.position);
+        //sensor.AddObservation(Obstacle.position);
         sensor.AddObservation(this.rb.velocity.x);
         sensor.AddObservation(this.rb.velocity.y);
 
@@ -90,6 +92,7 @@ public class PlayerMove : Agent
         if (collision.collider.CompareTag("Enemy"))
         {
             //Debug.Log("enemy!");
+            SetReward(-1.0f);
             EndEpisode();
         }
     }
