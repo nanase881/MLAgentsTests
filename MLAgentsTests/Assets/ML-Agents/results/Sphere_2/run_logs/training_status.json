@@ -27,15 +27,33 @@
                 "auxillary_file_paths": [
                     "results\\Sphere_2\\Sphere\\Sphere-200580.pt"
                 ]
+            },
+            {
+                "steps": 324464,
+                "file_path": "results\\Sphere_2\\Sphere\\Sphere-324464.onnx",
+                "reward": null,
+                "creation_time": 1690769270.4876497,
+                "auxillary_file_paths": [
+                    "results\\Sphere_2\\Sphere\\Sphere-324464.pt"
+                ]
+            },
+            {
+                "steps": 416517,
+                "file_path": "results\\Sphere_2\\Sphere\\Sphere-416517.onnx",
+                "reward": null,
+                "creation_time": 1690769878.1758504,
+                "auxillary_file_paths": [
+                    "results\\Sphere_2\\Sphere\\Sphere-416517.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 200580,
+            "steps": 416517,
             "file_path": "results\\Sphere_2\\Sphere.onnx",
             "reward": null,
-            "creation_time": 1690712791.0759208,
+            "creation_time": 1690769878.1758504,
             "auxillary_file_paths": [
-                "results\\Sphere_2\\Sphere\\Sphere-200580.pt"
+                "results\\Sphere_2\\Sphere\\Sphere-416517.pt"
             ]
         }
     },

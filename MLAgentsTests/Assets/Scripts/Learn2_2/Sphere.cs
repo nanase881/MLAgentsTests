@@ -9,6 +9,10 @@ public class Sphere : Agent
 {
 
     Rigidbody rb;
+    bool reached1;
+    bool reached2;
+    float minutes = 30f;
+    float timer;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +26,21 @@ public class Sphere : Agent
         this.rb.angularVelocity = Vector3.zero;
         this.rb.velocity = Vector3.zero;
         this.transform.localPosition = new Vector3(0, 0.5f, 0);
+        reached1 = false;
+        reached2 = false;
+        timer = 0;
 
 
+    }
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= minutes)
+        {
+            SetReward(-0.5f);
+            EndEpisode();
+        }
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -33,8 +50,7 @@ public class Sphere : Agent
 
         sensor.AddObservation(rb.velocity.x);
         sensor.AddObservation(rb.velocity.y);
-        //sensor.AddObservation() 
-        //I want to add sensors for ray 
+
     }
 
     public float forceMultiplier = 10;
@@ -59,14 +75,24 @@ public class Sphere : Agent
             EndEpisode();
         }
 
-        //if(distanceToCube < 13f)
+        //if (distanceToCube < 13f)
         //{
-        //    SetReward(0.5f);
+        //    if (!(reached1))
+        //    {
+        //        reached1 = true;
+        //        SetReward(0.5f);
+        //    }
+           
         //}
 
-        //if(distanceToCube < 20f)
+        //if (distanceToCube < 20f)
         //{
-        //    SetReward(0.2f);
+        //    if (!(reached2))
+        //    {
+        //        reached2 = true;
+        //        SetReward(0.2f);
+        //    }
+           
         //}
     }
 
@@ -76,19 +102,12 @@ public class Sphere : Agent
         if (collision.collider.CompareTag("Enemy"))
         {
             Debug.Log("enemy");
-            //SetReward(-0.2f);
+            SetReward(-0.1f);
             EndEpisode();
         }
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Enemy"))
-    //    {
-    //        SetReward(-1.0f);
-    //        EndEpisode();
-    //    }        
-    //}
+   
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
